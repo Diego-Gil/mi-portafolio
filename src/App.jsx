@@ -12,22 +12,27 @@ export default function App() {
     <div className="min-h-screen bg-dark-bg text-white selection:bg-gold-accent selection:text-black">
       
       {/* NAVBAR (Aparece después de un pequeño delay) */}
-      <motion.nav 
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-8 mix-blend-difference"
-      >
-        <div className="text-xl font-bold tracking-tighter uppercase italic">DiegoDev</div>
-        <ul className="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-light">
-          <li className="hover:text-gold-accent cursor-pointer transition">Formación</li>
-          <li className="hover:text-gold-accent cursor-pointer transition">Proyectos</li>
-          <li className="hover:text-gold-accent cursor-pointer transition">Skills</li>
-        </ul>
-        <button className="border border-white/20 px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition duration-500">
-          Contacto
-        </button>
-      </motion.nav>
+     <motion.nav 
+  initial={{ y: -20, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  /* 1. Cambié px-10 por px-6 en móvil (px-10 en PC) y reduje el py-8 a py-6 */
+  className="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-10 py-6 md:py-8 mix-blend-difference"
+>
+  {/* 2. Reduje un poco el tamaño del logo en móvil para que no empuje al botón */}
+  <div className="text-lg md:text-xl font-bold tracking-tighter uppercase italic">DiegoDev</div>
+  
+  <ul className="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-light">
+    <li className="hover:text-gold-accent cursor-pointer transition">Formación</li>
+    <li className="hover:text-gold-accent cursor-pointer transition">Proyectos</li>
+    <li className="hover:text-gold-accent cursor-pointer transition">Skills</li>
+  </ul>
+
+  {/* 3. El botón ahora es un poco más pequeño en móvil para que quepa bien */}
+  <button className="border border-white/20 px-4 md:px-6 py-2 text-[9px] md:text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition duration-500">
+    Contacto
+  </button>
+</motion.nav>
 
       {/* HERO SECTION */}
       <section className="relative h-screen flex flex-col items-center justify-center text-center px-6">
