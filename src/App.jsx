@@ -18,14 +18,14 @@ export default function App() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-8 mix-blend-difference"
       >
-        <div className="text-xl font-bold tracking-tighter uppercase italic">diegoDev</div>*
+        <div className="text-xl font-bold tracking-tighter uppercase italic">DiegoDev</div>
         <ul className="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-light">
-          <li className="hover:text-gold-accent cursor-pointer transition">Services</li>
-          <li className="hover:text-gold-accent cursor-pointer transition">Work</li>
-          <li className="hover:text-gold-accent cursor-pointer transition">About</li>
+          <li className="hover:text-gold-accent cursor-pointer transition">Formación</li>
+          <li className="hover:text-gold-accent cursor-pointer transition">Proyectos</li>
+          <li className="hover:text-gold-accent cursor-pointer transition">Skills</li>
         </ul>
         <button className="border border-white/20 px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition duration-500">
-          Let's Talk
+          Contacto
         </button>
       </motion.nav>
 
@@ -45,18 +45,21 @@ export default function App() {
         <motion.h1 
           initial="hidden" animate="visible" variants={fadeInUp}
           transition={{ delay: 0.2 }}
-          className="text-6xl md:text-9xl font-serif leading-tight mb-8"
+          className="text-6xl md:text-7xl font-serif leading-tight mb-8"
         >
-          Creative <br />
-          <span className="italic font-light opacity-80">Frontend</span>
+          Tecnólogo en Desarrollo de Software<br />
+          <span className="italic font-light opacity-60">Diego A. Osorio</span>
         </motion.h1>
         
         <motion.p 
           initial="hidden" animate="visible" variants={fadeInUp}
           transition={{ delay: 0.4 }}
-          className="max-w-md text-gray-500 text-sm font-light leading-relaxed mb-10"
+          //className="max-w-md text-gray-500 text-sm font-light leading-relaxed mb-10"
+          className="max-w-5xl text-gray-500 text-lg font-light leading-relaxed mb-10 text-justify"
         >
-          Premium web design, development, and SEO services to help your business stand out in the digital landscape.
+          Tecnólogo en Desarrollo de Software y estudiante de Ingeniería de Sistemas y Telecomunicaciones con sólida base técnica en administración de infraestructura tecnológica. Enfocado en el desarrollo de soluciones web modernas mediante el uso de JavaScript, React. Con conocimientos sólidos en HTML5, CSS3 y gestión de bases de datos SQL. 
+Cuento con experiencia en soporte técnico, automatización de procesos y optimización de sistemas, lo que me otorga una visión integral de la infraestructura y el ciclo de vida de la tecnología. Me destaco por mi capacidad analítica para resolver problemas complejos, aprendizaje acelerado de nuevas tecnologías y alta adaptabilidad a entornos de trabajo dinámicos.
+
         </motion.p>
 
         <motion.div 
@@ -70,7 +73,8 @@ export default function App() {
         {[
           { id: '01', title: 'Web Design', desc: 'Interfaces minimalistas que convierten usuarios en clientes.' },
           { id: '02', title: 'Development', desc: 'Código limpio y escalable usando las últimas tecnologías.' },
-          { id: '03', title: 'SEO & Content', desc: 'Visibilidad orgánica para que tu marca llegue a quien debe.' }
+          { id: '03', title: 'SEO & Content', desc: 'Visibilidad orgánica para que tu marca llegue a quien debe.' },
+
         ].map((service, index) => (
           <motion.div 
             key={service.id}
@@ -95,7 +99,7 @@ export default function App() {
           className="flex justify-between items-end mb-16 border-b border-white/5 pb-8"
         >
           <h2 className="text-4xl md:text-6xl font-serif italic">Selected Work</h2>
-          <span className="text-[10px] uppercase tracking-[0.4em] opacity-40 hover:opacity-100 cursor-pointer transition">See all projects</span>
+          <span className="text-[10px] uppercase tracking-[0.4em] opacity-40 hover:opacity-100 cursor-pointer transition">Ver todos los proyectos</span>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
