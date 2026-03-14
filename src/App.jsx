@@ -18,7 +18,7 @@ export default function App() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-8 mix-blend-difference"
       >
-        <div className="text-xl font-bold tracking-tighter uppercase italic">arik.</div>
+        <div className="text-xl font-bold tracking-tighter uppercase italic">diegoDev</div>*
         <ul className="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-light">
           <li className="hover:text-gold-accent cursor-pointer transition">Services</li>
           <li className="hover:text-gold-accent cursor-pointer transition">Work</li>
@@ -137,7 +137,7 @@ export default function App() {
         </div>
       </section>
       <footer className="py-20 text-center text-[10px] uppercase tracking-[0.4em] text-gray-600">
-        © 2026 Arik Portfolio — Built with React & Motion
+        © 2026 Diego Osorio | Portafolio — React & Motion
       </footer>
     </div>
   );
