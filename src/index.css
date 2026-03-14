@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #050505;
+  --color-gold-accent: #c5a47e;
+  --color-card-bg: #0f0f0f;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  background-color: var(--color-dark-bg);
+  color: white;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
